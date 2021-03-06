@@ -1,0 +1,23 @@
+
+.navbar {
+    height: 100vh;
+    width: 6vw;
+    background-color: blue;
+  
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar ul {
+    height: 50%;
+    width: 100%;
+
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,23 +1,50 @@
+import React from 'react';
+import AboutMe from './Components/AboutMe/AboutMe';
+import Navbar from './Components/Navbar/Navbar';
 import './App.css';
+import Skills from './Components/Skills/Skills';
+import Experiences from './Components/Experiences/Experiences';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      currentContent: "about-me"
+    }
+  }
+
+  selectContent = () => {
+    switch (this.state.currentContent) {
+      case "about-me":
+        return <AboutMe />;
+
+      case "skills":
+        return <Skills />;
+
+      case "experiences":
+        return <Experiences />;
+
+      case "projects":
+        return <Projects />;
+
+      case "contact":
+        return <Contact />;
+    }
+  }
+
+  changeContent = (newContent) => {
+    this.setState({ currentContent: newContent });
+  }
+
+  render() {
+    return (
+      <div className="App" >
+        <Navbar changeContent={this.changeContent} />
+        {this.selectContent()}
+      </div>
+    )
+  }
 }
-
-export default App;
