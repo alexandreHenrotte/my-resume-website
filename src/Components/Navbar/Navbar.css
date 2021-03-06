@@ -39,3 +39,8 @@ nav ul li img {
     height: 90%;
     width: 90%;
 }
+
+
+.active-page {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%) hue-rotate(214deg) brightness(101%) contrast(96%);
+}

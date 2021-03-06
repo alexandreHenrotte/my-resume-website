@@ -9,35 +9,42 @@ export default class Navbar extends React.Component {
                 <nav>
                     <ul>
                         <li>
-                            <img src={process.env.PUBLIC_URL + "/navbar-icons/user.svg"}
+                            <img className={this.props.currentContent === "about-me" ? "active-page" : "normal-page"}
+                                src={process.env.PUBLIC_URL + "/navbar-icons/user.svg"}
                                 onClick={() => this.props.changeContent("about-me")}
                                 alt="Icon for section About Me" />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + "/navbar-icons/coding.svg"}
+                            <img className={this.props.currentContent === "skills" ? "active-page" : "normal-page"}
+                                src={process.env.PUBLIC_URL + "/navbar-icons/coding.svg"}
                                 onClick={() => this.props.changeContent("skills")}
                                 alt="Icon for section Skills" />
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + "/navbar-icons/experience.svg"}
+                            <img className={this.props.currentContent === "experiences" ? "active-page" : "normal-page"}
+                                src={process.env.PUBLIC_URL + "/navbar-icons/experience.svg"}
                                 onClick={() => this.props.changeContent("experiences")}
                                 alt="Icon for section Experiences" />
 
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + "/navbar-icons/projects.svg"}
+                            <img className={this.props.currentContent === "projects" ? "active-page" : "normal-page"}
+                                src={process.env.PUBLIC_URL + "/navbar-icons/projects.svg"}
                                 onClick={() => this.props.changeContent("projects")}
                                 alt="Icon for section Projects" />
 
                         </li>
                         <li>
-                            <img src={process.env.PUBLIC_URL + "/navbar-icons/contact.svg"}
+                            <img className={this.props.currentContent === "contact" ? "active-page" : "normal-page"}
+                                src={process.env.PUBLIC_URL + "/navbar-icons/contact.svg"}
                                 onClick={() => this.props.changeContent("contact")}
                                 alt="Icon for section Contact" />
                         </li>
                     </ul>
                 </nav>
-                <img id="toggle-navbar-icon" src={process.env.PUBLIC_URL + "/navbar-icons/toggle-navbar.svg"} alt="toggle navbar icon" />
+                <img id="toggle-navbar-icon"
+                    src={process.env.PUBLIC_URL + "/navbar-icons/toggle-navbar.svg"}
+                    alt="toggle navbar icon" />
             </div>
         )
     }

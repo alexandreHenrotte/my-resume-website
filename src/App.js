@@ -43,7 +43,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App" >
-        <Navbar changeContent={this.changeContent} />
+        <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
         <Content>
           {this.selectContent()}
         </Content>
