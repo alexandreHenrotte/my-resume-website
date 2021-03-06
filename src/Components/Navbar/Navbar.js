@@ -3,6 +3,25 @@ import './Navbar.css';
 
 
 export default class Navbar extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            visible: true
+        }
+    }
+
+    toggle = () => {
+        if (this.state.visible) {
+            console.log("fermeture...");
+        }
+        else {
+            console.log("ouverture...")
+        }
+
+        this.setState({ visible: !this.state.visible })
+    }
+
     render() {
         return (
             <div id="navbar-wrapper">
@@ -44,6 +63,7 @@ export default class Navbar extends React.Component {
                 </nav>
                 <img id="toggle-navbar-icon"
                     src={process.env.PUBLIC_URL + "/navbar-icons/toggle-navbar.svg"}
+                    onClick={() => this.toggle()}
                     alt="toggle navbar icon" />
             </div>
         )
