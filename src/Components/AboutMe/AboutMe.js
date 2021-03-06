@@ -5,7 +5,7 @@ export default class AboutMe extends React.Component {
     render() {
         return (
             <section className='main-content'>
-                <p>about me</p>
+                <p>About me</p>
             </section>
 
         )

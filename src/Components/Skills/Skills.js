@@ -5,7 +5,7 @@ export default class Skills extends React.Component {
     render() {
         return (
             <div className="main-content">
-                <p>skills</p>
+                <p>Skills</p>
             </div>
         )
     }

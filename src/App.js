@@ -6,6 +6,7 @@ import Skills from './Components/Skills/Skills';
 import Experiences from './Components/Experiences/Experiences';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import Content from './Components/Content/Content';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -43,7 +44,9 @@ export default class App extends React.Component {
     return (
       <div className="App" >
         <Navbar changeContent={this.changeContent} />
-        {this.selectContent()}
+        <Content>
+          {this.selectContent()}
+        </Content>
       </div>
     )
   }
