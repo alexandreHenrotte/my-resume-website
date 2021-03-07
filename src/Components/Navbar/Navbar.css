@@ -3,7 +3,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    transition: all 1s ease-out;
+    transform: translate(0px);
 }
+
+#navbar-wrapper.hided {
+    transform: translate(-6vw);
+}
+
 
 #toggle-navbar-icon {
     position: relative;
@@ -20,7 +28,6 @@ nav {
     display: flex;
     align-items: center;
 }
-
 
 nav ul {
     height: 50%;
@@ -40,6 +47,19 @@ nav ul li img {
     width: 90%;
 }
 
+/* Toggle navbar animation */
+
+@keyframes toggle-navbar {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(1000px);
+    }
+}
+
+
+/* Change the color of the icon representing the actual page */
 
 .active-page {
     filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%) hue-rotate(214deg) brightness(101%) contrast(96%);

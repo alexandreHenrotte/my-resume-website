@@ -12,20 +12,21 @@ export default class Navbar extends React.Component {
     }
 
     toggle = () => {
-        if (this.state.visible) {
-            console.log("fermeture...");
-        }
-        else {
-            console.log("ouverture...")
-        }
-
-        this.setState({ visible: !this.state.visible })
+        this.setState({ visible: !this.state.visible }, () => {
+            var navbar = document.getElementById("navbar-wrapper");
+            if (this.state.visible) {
+                navbar.classList.remove("hided")
+            }
+            else {
+                navbar.classList.add("hided")
+            }
+        });
     }
 
     render() {
         return (
             <div id="navbar-wrapper">
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li>
                             <img className={this.props.currentContent === "about-me" ? "active-page" : "normal-page"}
