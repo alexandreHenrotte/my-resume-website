@@ -6,3 +6,11 @@ body {
     color: white;
     font-family: 'Titillium Web', sans-serif;
 }
+
+#content {
+    transition: all 1s ease-out;
+    transform: translate(0px);
+}
+#content.without-navbar {
+    transform: translate(-5vw);
+}

@@ -14,11 +14,16 @@ export default class Navbar extends React.Component {
     toggle = () => {
         this.setState({ visible: !this.state.visible }, () => {
             var navbar = document.getElementById("navbar-wrapper");
+            var content = document.getElementById("content");
+
             if (this.state.visible) {
-                navbar.classList.remove("hided")
+                navbar.classList.remove("hided");
+                content.classList.remove("without-navbar")
             }
             else {
-                navbar.classList.add("hided")
+                navbar.classList.add("hided");
+                content.classList.add("without-navbar")
+
             }
         });
     }

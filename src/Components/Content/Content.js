@@ -4,7 +4,7 @@ import './Content.css';
 export default class Content extends React.Component {
     render() {
         return (
-            <body>
+            <body id="content">
                 {this.props.children}
             </body>
         )
