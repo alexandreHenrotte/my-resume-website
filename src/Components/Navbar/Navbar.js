@@ -26,7 +26,7 @@ export default class Navbar extends React.Component {
     render() {
         return (
             <div id="navbar-wrapper">
-                <nav id="nav">
+                <nav>
                     <ul>
                         <li>
                             <img className={this.props.currentContent === "about-me" ? "active-page" : "normal-page"}
