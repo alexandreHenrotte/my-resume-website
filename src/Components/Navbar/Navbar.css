@@ -7,7 +7,6 @@
     transition: all 1s ease-out;
     transform: translate(0px);
 }
-
 #navbar-wrapper.hided {
     transform: translate(-6vw);
 }
@@ -56,4 +55,14 @@ nav ul li img {
 
 .active-page {
     filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%) hue-rotate(214deg) brightness(101%) contrast(96%);
+}
+
+/* Apply some opacity on icons representing the pages that are not the actual page */
+
+.normal-page {
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+.normal-page:hover {
+    opacity: 0.5;
 }
