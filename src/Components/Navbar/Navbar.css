@@ -1,4 +1,3 @@
-
 #navbar-wrapper {
     display: flex;
     flex-direction: row;
@@ -61,7 +60,7 @@ nav ul li img {
 
 .normal-page {
     opacity: 1;
-    transition: all 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
 }
 .normal-page:hover {
     opacity: 0.5;
