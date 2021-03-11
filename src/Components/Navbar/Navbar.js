@@ -23,7 +23,6 @@ export default class Navbar extends React.Component {
             else {
                 navbar.classList.add("hided");
                 content.classList.add("without-navbar")
-
             }
         });
     }
@@ -35,40 +34,40 @@ export default class Navbar extends React.Component {
                     <ul>
                         <li>
                             <img className={this.props.currentContent === "about-me" ? "active-page" : "normal-page"}
-                                src={process.env.PUBLIC_URL + "/navbar-icons/user.svg"}
+                                src={process.env.PUBLIC_URL + "/icons/navbar/user.svg"}
                                 onClick={() => this.props.changeContent("about-me")}
                                 alt="Icon for section About Me" />
                         </li>
                         <li>
                             <img className={this.props.currentContent === "skills" ? "active-page" : "normal-page"}
-                                src={process.env.PUBLIC_URL + "/navbar-icons/coding.svg"}
+                                src={process.env.PUBLIC_URL + "/icons/navbar/coding.svg"}
                                 onClick={() => this.props.changeContent("skills")}
                                 alt="Icon for section Skills" />
                         </li>
                         <li>
                             <img className={this.props.currentContent === "experiences" ? "active-page" : "normal-page"}
-                                src={process.env.PUBLIC_URL + "/navbar-icons/experience.svg"}
+                                src={process.env.PUBLIC_URL + "/icons/navbar/experience.svg"}
                                 onClick={() => this.props.changeContent("experiences")}
                                 alt="Icon for section Experiences" />
 
                         </li>
                         <li>
                             <img className={this.props.currentContent === "projects" ? "active-page" : "normal-page"}
-                                src={process.env.PUBLIC_URL + "/navbar-icons/projects.svg"}
+                                src={process.env.PUBLIC_URL + "/icons/navbar/projects.svg"}
                                 onClick={() => this.props.changeContent("projects")}
                                 alt="Icon for section Projects" />
 
                         </li>
                         <li>
                             <img className={this.props.currentContent === "contact" ? "active-page" : "normal-page"}
-                                src={process.env.PUBLIC_URL + "/navbar-icons/contact.svg"}
+                                src={process.env.PUBLIC_URL + "/icons/navbar/contact.svg"}
                                 onClick={() => this.props.changeContent("contact")}
                                 alt="Icon for section Contact" />
                         </li>
                     </ul>
                 </nav>
                 <img id="toggle-navbar-icon"
-                    src={process.env.PUBLIC_URL + "/navbar-icons/toggle-navbar.svg"}
+                    src={process.env.PUBLIC_URL + "/icons/navbar/toggle-navbar.svg"}
                     onClick={() => this.toggle()}
                     alt="toggle navbar icon" />
             </div>

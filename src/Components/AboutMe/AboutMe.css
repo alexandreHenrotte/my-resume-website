@@ -1,0 +1,92 @@
+.main-content {
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.2vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 90vh;
+  width: 45vw;
+}
+
+.right-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-grow: 1;
+
+  width: auto;
+  height: 80%;
+  margin-bottom: 5vh;
+}
+
+#title-name {
+  font-weight: normal;
+  font-size: 2vw;
+
+  margin: 3vh 0px;
+}
+
+#profile-pic {
+  height: auto;
+  width: 13vw;
+}
+
+.profile-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+
+  width: 25vw;
+  padding: 0;
+}
+
+.text-separator {
+  color: #1f46ab;
+  font-size: 1.8vw;
+}
+
+#text-about-me {
+  text-align: center;
+  width: 35vw;
+
+  border-top: 2px solid #1f46ab;
+  border-bottom: 2px solid #1f46ab;
+
+  padding: 1vh 0px;
+  margin: 10px 0;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+
+  width: 10vw;
+  padding: 0;
+
+  margin-bottom: 10%;
+}
+.social-networks li img {
+  width: auto;
+  height: 5vh;
+}

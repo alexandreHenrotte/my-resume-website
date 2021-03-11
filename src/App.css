@@ -1,13 +1,27 @@
 html {
+  height: 100%;
+  width: 100%;
+
   margin: 0;
   padding: 0;
-  
-  background: linear-gradient(91.46deg, #061178 1.24%, rgba(1, 8, 69, 0.48) 98.76%), linear-gradient(#1E1919, #1E1919);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: linear-gradient(
+      91.46deg,
+      #061178 1.24%,
+      rgba(1, 8, 69, 0.48) 98.76%
+    ),
+    linear-gradient(#1e1919, #1e1919);
   mix-blend-mode: normal;
 }
 
-
 .App {
+  height: 100%;
+  width: 100%;
+
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }

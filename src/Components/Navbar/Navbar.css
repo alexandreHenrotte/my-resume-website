@@ -1,67 +1,72 @@
 #navbar-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  height: 100vh;
 
-    transition: all 1s ease-out;
-    transform: translate(0px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  transition: transform 1s ease-out;
+  transform: translate(0px);
 }
 #navbar-wrapper.hided {
-    transform: translate(-6vw);
+  transform: translate(-6vw);
 }
 
-
 nav {
-    height: 100vh;
-    width: 6vw;
-    background: linear-gradient(180deg, #030427 0%, rgba(9, 10, 35, 0.25) 48.23%, rgba(1, 3, 52, 0.34) 100%);
-  
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  width: 6vw;
+  background: linear-gradient(
+    180deg,
+    #030427 0%,
+    rgba(9, 10, 35, 0.25) 48.23%,
+    rgba(1, 3, 52, 0.34) 100%
+  );
+
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav ul li img {
-    height: 90%;
-    width: 90%;
-    
-    cursor: pointer;
-}
+  height: auto;
+  width: 2.5vw;
 
+  cursor: pointer;
+}
 
 #toggle-navbar-icon {
-    position: relative;
-    height: 10vh;
-    width: auto;
+  position: relative;
+  height: 10vh;
+  width: auto;
 
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /* Change the color of the icon representing the actual page */
 
 .active-page {
-    filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%) hue-rotate(214deg) brightness(101%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%)
+    hue-rotate(214deg) brightness(101%) contrast(96%);
 }
 
 /* Apply some opacity on icons representing the pages that are not the actual page */
 
 .normal-page {
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
 .normal-page:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }

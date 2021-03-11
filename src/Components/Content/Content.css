@@ -1,16 +1,13 @@
-
-body {
-    height: 100vh;
-    width: 100vw;
-
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-}
-
 #content {
-    transition: all 1s ease-out;
-    transform: translate(0px);
+  height: 100vh;
+  width: 95vw;
+
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+
+  transition: transform 1s ease-out;
 }
+
 #content.without-navbar {
-    transform: translate(-5vw);
+  transform: translate(-5vw);
 }
