@@ -39,11 +39,33 @@ nav ul {
   align-items: center;
 }
 
-nav ul li img {
+.nav-icon img {
   height: auto;
   width: 2.5vw;
 
   cursor: pointer;
+}
+
+.nav-icon span {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+
+  font-size: 0.85em;
+  color: #c0c0c0;
+  background: #0f0e45;
+  border: 1px solid #ffe8e8;
+  border-radius: 7px;
+
+  margin-left: 5px;
+  padding: 5px;
+
+  transition: opacity 0.35s ease-in;
+}
+.nav-icon:hover span {
+  opacity: 1;
+  visibility: visible;
 }
 
 #toggle-navbar-icon {
@@ -65,7 +87,7 @@ nav ul li img {
 
 .normal-page {
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .normal-page:hover {
   opacity: 0.5;
