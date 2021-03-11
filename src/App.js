@@ -1,12 +1,12 @@
 import React from 'react';
-import AboutMe from './Components/AboutMe/AboutMe';
+import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import Navbar from './Components/Navbar/Navbar';
-import './App.css';
-import Skills from './Components/Skills/Skills';
-import Experiences from './Components/Experiences/Experiences';
-import Projects from './Components/Projects/Projects';
-import Contact from './Components/Contact/Contact';
+import Skills from './Components/Pages/Skills/Skills';
+import Experiences from './Components/Pages/Experiences/Experiences';
+import Projects from './Components/Pages/Projects/Projects';
+import Contact from './Components/Pages/Contact/Contact';
 import Content from './Components/Content/Content';
+import './App.css';
 
 export default class App extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
-import '../../utils/basic-animations.css'
+import '../../../utils/basic-animations.css'
 import InfoBox from './InfoBox'
 
 export default class AboutMe extends React.Component {
