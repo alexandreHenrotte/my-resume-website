@@ -80,7 +80,7 @@ export default class AboutMe extends React.Component {
                                     <ul>
                                         <li>Passion</li>
                                         <li>Persévérance</li>
-                                        <li>Curieux</li>
+                                        <li>Curiosité</li>
                                     </ul>
                                 </div>
                             }
