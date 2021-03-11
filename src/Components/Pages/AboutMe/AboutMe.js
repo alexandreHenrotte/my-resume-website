@@ -20,12 +20,12 @@ export default class AboutMe extends React.Component {
                     <p id="text-about-me">Passionné par l'informatique depuis mon plus jeune âge, je suis une personne qui a soif de connaissance et qui ne lâche rien pour atteindre ses objectifs</p>
                     <ul className="social-networks">
                         <li>
-                            <a href="https://github.com/alexandreHenrotte" target="_blank">
+                            <a href="https://github.com/alexandreHenrotte" target="_blank" rel="noreferrer">
                                 <img className="bounce" src={process.env.PUBLIC_URL + "/icons/social-networks/github.svg"} href="https://github.com/alexandreHenrotte" alt="Github icon" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/henrotte-alexandre/" target="_blank">
+                            <a href="https://www.linkedin.com/in/henrotte-alexandre/" target="_blank" rel="noreferrer">
                                 <img className="bounce" src={process.env.PUBLIC_URL + "/icons/social-networks/linkedin.svg"} alt="LinkedIn icon" />
                             </a>
                         </li>
