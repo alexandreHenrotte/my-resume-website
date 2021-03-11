@@ -1,5 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
+import '../../utils/utils.css'
 import InfoBox from './InfoBox'
 
 export default class AboutMe extends React.Component {
@@ -20,12 +21,12 @@ export default class AboutMe extends React.Component {
                     <ul className="social-networks">
                         <li>
                             <a href="https://github.com/alexandreHenrotte" target="_blank">
-                                <img src={process.env.PUBLIC_URL + "/icons/social-networks/github.svg"} href="https://github.com/alexandreHenrotte" alt="Github icon" />
+                                <img className="bounce" src={process.env.PUBLIC_URL + "/icons/social-networks/github.svg"} href="https://github.com/alexandreHenrotte" alt="Github icon" />
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/henrotte-alexandre/" target="_blank">
-                                <img src={process.env.PUBLIC_URL + "/icons/social-networks/linkedin.svg"} alt="LinkedIn icon" />
+                                <img className="bounce" src={process.env.PUBLIC_URL + "/icons/social-networks/linkedin.svg"} alt="LinkedIn icon" />
                             </a>
                         </li>
                     </ul>
