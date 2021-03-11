@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
-import Container from './Container'
+import InfoBox from './InfoBox'
 
 export default class AboutMe extends React.Component {
     render() {
@@ -32,8 +32,7 @@ export default class AboutMe extends React.Component {
                 </div>
                 <div className='right-info'>
                     {
-                        <Container
-                            containerWidthClass="width-small"
+                        <InfoBox
                             image={{
                                 src: process.env.PUBLIC_URL + "/icons/about-me/languages.svg",
                                 alt: "Languages icon"
@@ -50,8 +49,7 @@ export default class AboutMe extends React.Component {
                         />
                     }
                     {
-                        <Container
-                            containerWidthClass="width-big"
+                        <InfoBox
                             image={{
                                 src: process.env.PUBLIC_URL + "/icons/about-me/interests.svg",
                                 alt: "Interests icon"
@@ -70,8 +68,7 @@ export default class AboutMe extends React.Component {
                         />
                     }
                     {
-                        <Container
-                            containerWidthClass="width-small"
+                        <InfoBox
                             image={{
                                 src: process.env.PUBLIC_URL + "/icons/about-me/soft-skills.svg",
                                 alt: "Soft-skills icon"
