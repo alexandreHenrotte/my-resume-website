@@ -51,7 +51,7 @@ export default class Navbar extends React.Component {
                                 src={process.env.PUBLIC_URL + "/icons/navbar/experience.svg"}
                                 onClick={() => this.props.changeContent("experiences")}
                                 alt="Icon for section Experiences" />
-                            <span>Expérience</span>
+                            <span>Formation et expérience</span>
                         </li>
                         <li className="nav-icon">
                             <img className={this.props.currentContent === "projects" ? "active-page" : "normal-page"}
