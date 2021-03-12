@@ -6,7 +6,7 @@ import InfoBox from './InfoBox'
 export default class AboutMe extends React.Component {
     render() {
         return (
-            <section className='main-content'>
+            <section className='about-me-container'>
                 <div className='left-info'>
                     <h1 id="title-name">Henrotte Alexandre</h1>
                     <img id="profile-pic" src={process.env.PUBLIC_URL + "/images/profile-pic.png"} alt="Henrotte Alexandre" />

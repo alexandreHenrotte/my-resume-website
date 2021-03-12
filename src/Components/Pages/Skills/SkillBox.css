@@ -1,6 +1,27 @@
 #parallelogram {
-  width: 150px;
-  height: 100px;
+  width: 15vw;
+  height: 9vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   transform: skew(-20deg);
   border: 1px solid white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+
+  margin: 15px 0;
+}
+
+#parallelogram img {
+  height: auto;
+  width: 20%;
+
+  transform: skew(20deg);
+}
+
+#parallelogram span {
+  margin-right: 20px;
+  font-size: 1.2em;
+  transform: skew(20deg);
 }

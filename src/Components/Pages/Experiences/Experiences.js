@@ -4,9 +4,9 @@ import './Experiences.css';
 export default class Experiences extends React.Component {
     render() {
         return (
-            <div className='main-content'>
+            <section className='main-content'>
                 <p>Experiences</p>
-            </div>
+            </section>
         )
     }
 }
