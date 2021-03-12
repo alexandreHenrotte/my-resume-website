@@ -16,9 +16,9 @@ export default class Content extends React.Component {
         this.setState({loaded: true});
     }
 
-    componentWillReceiveProps(nextProps) {
+    componentDidUpdate(nextProps) {
         console.log(nextProps.children)
-        if (nextProps.children != this.props.children) {
+        if (nextProps.children !== this.props.children) {
             this.setState({loaded: false});
         }
     }
