@@ -1,0 +1,31 @@
+#loading-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 95vw;
+  height: 100vh;
+
+  top: -100px;
+
+  animation: slide-in 7s;
+}
+
+#loading-text {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+#loading-bar {
+  width: 50%;
+}
+
+@keyframes slide-in {
+  35% {
+    top: 45vh;
+  }
+  70% {
+    top: 200vh;
+  }
+}

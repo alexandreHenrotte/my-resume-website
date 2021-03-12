@@ -9,7 +9,7 @@ export default class AboutMe extends React.Component {
             <section className='about-me-container'>
                 <div className='left-info'>
                     <h1 id="title-name">Henrotte Alexandre</h1>
-                    <img id="profile-pic" src={process.env.PUBLIC_URL + "/images/profile-pic.png"} alt="Henrotte Alexandre" />
+                    <img id="profile-pic" src={process.env.PUBLIC_URL + "/images/about-me/profile-pic.png"} alt="Henrotte Alexandre" />
                     <ul className="profile-infos">
                         <li>19 ans</li>
                         <li className="text-separator">/</li>

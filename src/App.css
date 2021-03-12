@@ -25,3 +25,20 @@ html {
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* Custom scroll bar */
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(8, 8, 88);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(8, 8, 88);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(9, 57, 146);
+}

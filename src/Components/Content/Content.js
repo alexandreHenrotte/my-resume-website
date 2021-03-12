@@ -1,31 +1,35 @@
 import React from 'react';
+import Loading from '../Loading/Loading';
 import './Content.css';
 
 export default class Content extends React.Component {
     
     constructor() {
         super()
-        
+
         this.state = {
-            created: false
+            loaded: false
         }
     }
 
-    fadeIn = () => {
-        var content = document.getElementById("content");
-        content.classList.add("fade-in");
-        
+    setLoaded = () => {
+        this.setState({loaded: true});
     }
-    onAnimationEnd = () => {
-        var content = document.getElementById("content");
-        content.classList.remove("fade-in");
+
+    componentWillReceiveProps(nextProps) {
+        console.log(nextProps.children)
+        if (nextProps.children != this.props.children) {
+            this.setState({loaded: false});
+        }
     }
 
     render() {
-        this.state.created ? this.fadeIn() : this.setState({created: true});
         return (
             <body id="content" onAnimationEnd={this.onAnimationEnd}>
-                {this.props.children}
+                {!this.state.loaded && <Loading setLoaded={this.setLoaded} />}
+                <div id="page" className={this.state.loaded ? "page-visible" : "page-hided"}>
+                    {this.props.children}
+                </div>
             </body>
         )
     }

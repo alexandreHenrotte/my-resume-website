@@ -11,14 +11,14 @@ export default class Skills extends React.Component {
                         <h3>Programmation</h3>
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/java.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/java.png",
                                 alt: "Java Logo"
                             }}
                             skillName="Java"
                         />
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/python.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/python.png",
                                 alt: "Python Logo"
                             }}
                             skillName="Python"
@@ -28,21 +28,21 @@ export default class Skills extends React.Component {
                         <h3>Web - Front end</h3>
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/html5.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/html5.png",
                                 alt: "HTML Logo"
                             }}
                             skillName="HTML"
                         />
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/css3.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/css3.png",
                                 alt: "CSS Logo"
                             }}
                             skillName="CSS"
                         />
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/javascript.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/javascript.png",
                                 alt: "Javascript Logo"
                             }}
                             skillName="Javascript"
@@ -52,7 +52,7 @@ export default class Skills extends React.Component {
                         <h3>Web - Back end</h3>
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/nodejs.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/nodejs.png",
                                 alt: "Node.js Logo"
                             }}
                             skillName="Node.js"
@@ -64,7 +64,7 @@ export default class Skills extends React.Component {
                         <h3>Base de données</h3>
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/mssql.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/mssql.png",
                                 alt: "Microsoft SQL Server Logo"
                             }}
                             skillName="Microsoft SQL Server"
@@ -74,7 +74,7 @@ export default class Skills extends React.Component {
                         <h3>Gestion de versions</h3>
                         <SkillBox 
                             img={{
-                                src: process.env.PUBLIC_URL + "/icons/skills/git.png",
+                                src: process.env.PUBLIC_URL + "/images/skills/git.png",
                                 alt: "Git Logo"
                             }}
                             skillName="Git"

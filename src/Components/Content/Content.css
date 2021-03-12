@@ -2,25 +2,28 @@
   height: 100vh;
   width: 95vw;
 
+  margin-left: 8vw;
+
   color: white;
   font-family: "Titillium Web", sans-serif;
 
   transition: transform 1s ease-out;
 }
-
 #content.without-navbar {
   transform: translate(-5vw);
 }
 
-#content.fade-in {
-  animation: fade-in 1s;
-}
+#page {
+  width: 100%;
+  height: 100%;
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  transition: opacity 1s ease-out;
+}
+.page-hided {
+  visibility: hidden;
+  opacity: 0;
+}
+.page-visible {
+  visibility: visible;
+  opacity: 1;
 }

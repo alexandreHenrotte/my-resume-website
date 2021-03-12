@@ -1,0 +1,111 @@
+.formation-experiences-container {
+  height: 200vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scroll-animation {
+  position: absolute;
+  height: auto;
+  width: 3vw;
+
+  bottom: 0;
+  right: 0;
+  padding-right: 50px;
+
+  transition: opacity 1s ease-out;
+}
+.animation-hide {
+  opacity: 0;
+}
+
+#formations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 50%;
+  width: auto;
+
+  margin-top: 6vh;
+}
+#formations-container h3 {
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+
+.formation-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 30px;
+  padding: 10px 30px 10px 10px;
+
+  width: 75%;
+
+  font-size: 1.1em;
+
+  background: linear-gradient(
+    102.35deg,
+    rgba(119, 122, 185, 0.14) 7.47%,
+    rgba(43, 48, 168, 0.14) 92.44%
+  );
+  border-radius: 30px;
+}
+.formation-card img {
+  height: auto;
+  width: 8vw;
+
+  margin: 15px 30px 15px 15px;
+}
+.formation-text-container {
+  display: flex;
+  flex-direction: column;
+}
+.secondary-text {
+  color: #c0c0c0;
+}
+
+#experiences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 50%;
+  width: auto;
+}
+
+#experiences-container h3 {
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 30px;
+  padding: 20px;
+
+  width: 90%;
+
+  font-size: 1.1em;
+
+  background: linear-gradient(
+    102.35deg,
+    rgba(119, 122, 185, 0.14) 7.47%,
+    rgba(43, 48, 168, 0.14) 92.44%
+  );
+  border-radius: 30px;
+}
+
+.experience-name {
+  font-size: 1.15em;
+}
+.experience-text {
+  margin: 10px 0px;
+}
