@@ -9,7 +9,7 @@ export default class ProjectContainer extends React.Component {
             <div className='project-container'>
                     <h3>{this.props.title}</h3>
                     <div class="ih-item circle colored effect1">
-                        <a href={`https://github.com/${this.props.githubProjectName}`} target="_blank">
+                        <a href={`https://github.com/${this.props.githubProjectName}`} target="_blank" rel="noreferrer">
                             <div class="spinner"></div>
                                 <div class="img">
                                     <img src={this.props.img.src} alt={this.props.img.alt} />
