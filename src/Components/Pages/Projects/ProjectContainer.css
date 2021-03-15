@@ -1,0 +1,28 @@
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 70%;
+    width: 40%;
+    margin: 3vw 3vw 8vw 3vw;
+}
+
+.project-container h3 {
+    font-size: 1.8em;
+}
+
+
+.info-back p {
+    margin-top: 10px!important;
+}
+
+.project-container span {
+    width: 75%;
+    margin-top: 5px;
+
+    font-size: 1.15em;
+    text-align: center;
+}
