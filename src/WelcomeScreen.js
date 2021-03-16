@@ -10,34 +10,6 @@ export default class WelcomeScreen extends React.Component {
         return sentence;
     }
 
-
-    /*componentDidMount() {
-        var position = this.getNameTitlePos();
-        this.moveName(position.left, position.top);
-    }
-    getNameTitlePos() {
-        var nameTitle = document.getElementById("title-name");
-
-        var top = 0, left = 0;
-        do {
-            top +=  nameTitle.offsetTop  || 0;
-            left +=  nameTitle.offsetLeft || 0;
-             nameTitle =  nameTitle.offsetParent;
-        } while(nameTitle);
-
-        return {
-            top: top,
-            left: left
-        };
-    }
-
-    moveName(x_pos, y_pos) {
-        var name = document.getElementById('welcome-name');
-        name.style.position = "absolute";
-        name.style.left = x_pos+'px';
-        name.style.top = `calc(${y_pos}px - 4.35vh`;
-    }*/
-
     render() {
         return (
             <div className="welcome-screen-container">
