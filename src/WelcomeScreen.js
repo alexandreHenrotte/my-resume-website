@@ -7,7 +7,6 @@ export default class WelcomeScreen extends React.Component {
     getRandomSentence() {
         var array = ["Passioné d'informatique", "Curieux et envieux d'apprendre", "Étudiant en informatique"];
         var sentence = array[Math.floor(Math.random() * array.length)];
-        console.log(sentence);
         return sentence;
     }
 
