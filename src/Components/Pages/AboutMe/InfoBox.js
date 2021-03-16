@@ -3,7 +3,6 @@ import './InfoBox.css'
 
 export default class InfoBox extends React.Component {
     render() {
-        console.log(this.props.image.src)
         return (
             <div class="container ">
                 <div class="title">
