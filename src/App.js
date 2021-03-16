@@ -1,4 +1,5 @@
 import React from 'react';
+import WelcomeScreen from './WelcomeScreen';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import Navbar from './Components/Navbar/Navbar';
 import Skills from './Components/Pages/Skills/Skills';
@@ -43,6 +44,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App" >
+        <WelcomeScreen />
         <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
         <Content>
           {this.selectContent()}
