@@ -1,0 +1,12 @@
+.interests-container {
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.interest {
+    margin: 5px 15px;
+}

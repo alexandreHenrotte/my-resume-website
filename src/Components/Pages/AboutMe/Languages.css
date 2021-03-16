@@ -1,0 +1,16 @@
+.languages-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.language-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 20px;
+}
+
+.language-level {
+    color: #C0C0C0;
+}

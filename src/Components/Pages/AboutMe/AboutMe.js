@@ -40,12 +40,16 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Langues"
                             content={
-                                <div className="info">
-                                    <ul>
-                                        <li>Français : langue maternelle</li>
-                                        <li>Anglais : niveau B2</li>
-                                    </ul>
-                                </div>
+                                    <div className="languages-container">
+                                        <div className="language-box">
+                                            <span className="language-name">Français</span>
+                                            <span className="language-level">Langue maternelle</span>
+                                        </div>
+                                        <div className="language-box">
+                                            <span className="language-name">Anglais</span>
+                                            <span className="language-level">Niveau B2</span>
+                                        </div>
+                                    </div>
                             }
                         />
                     }
@@ -57,14 +61,12 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Centres d'intérêts"
                             content={
-                                <div className="info">
-                                    <ul>
-                                        <li>Développement (logiciel et web)</li>
-                                        <li>Jeux vidéo</li>
-                                        <li>Livres</li>
-                                        <li>Cinéma</li>
-                                    </ul>
-                                </div>
+                                    <div className="interests-container">
+                                        <span className="interest">♥ Développement (logiciel et web)</span>
+                                        <span className="interest">♥ Jeux vidéo</span>
+                                        <span className="interest">♥ Livres</span>
+                                        <span className="interest">♥ Cinéma</span>
+                                    </div>
                             }
                         />
                     }
@@ -76,13 +78,11 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Soft skills"
                             content={
-                                <div className="info">
-                                    <ul>
+                                    <ul id="soft-skills">
                                         <li>Passion</li>
                                         <li>Persévérance</li>
                                         <li>Curiosité</li>
                                     </ul>
-                                </div>
                             }
                         />
                     }
