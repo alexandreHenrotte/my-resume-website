@@ -17,19 +17,14 @@
 nav {
   height: 100vh;
   width: 6vw;
-  background: linear-gradient(
-    180deg,
-    #030427 0%,
-    rgba(9, 10, 35, 0.25) 48.23%,
-    rgba(1, 3, 52, 0.34) 100%
-  );
+  background: #F5F5F5;
 
   display: flex;
   align-items: center;
 }
 
 nav ul {
-  height: 50%;
+  height: 60%;
   width: 100%;
 
   list-style-type: none;
@@ -41,34 +36,48 @@ nav ul {
   align-items: center;
 }
 
+.nav-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 .nav-icon img {
+  margin: auto;
   height: auto;
-  width: 2.5vw;
+  width: 35%;
 
   cursor: pointer;
 }
 
 .nav-icon span {
+  position: absolute;
   visibility: hidden;
   opacity: 0;
-  position: absolute;
   z-index: 1;
 
-  font-size: 0.85em;
-  color: #c0c0c0;
-  background: #0f0e45;
-  border: 1px solid #ffe8e8;
-  border-radius: 7px;
+  top: 120%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 
-  margin-left: 5px;
-  padding: 5px;
+  font-size: 0.9em;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
 
   transition: opacity 0.35s ease-in;
 }
+
+
 .nav-icon:hover span {
   opacity: 1;
   visibility: visible;
 }
+
 
 #toggle-navbar-icon {
   position: relative;
@@ -78,11 +87,14 @@ nav ul {
   cursor: pointer;
 }
 
-/* Change the color of the icon representing the actual page */
+/* Change the color of the icon and the text representing the actual page */
 
 .active-page {
   filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%)
     hue-rotate(214deg) brightness(101%) contrast(96%);
+}
+.active-page + span {
+  color: #1F46AB;
 }
 
 /* Apply some opacity on icons representing the pages that are not the actual page */

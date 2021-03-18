@@ -10,12 +10,7 @@
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(
-      91.46deg,
-      #061178 1.24%,
-      rgba(1, 8, 69, 0.48) 98.76%
-    ),
-    linear-gradient(#1e1919, #1e1919);
+    background: #040c58;
 
     animation-name: welcome;
     animation-duration: 6s;

@@ -5,13 +5,14 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 70%;
-    width: 40%;
-    margin: 3vw 3vw 8vw 3vw;
+    height: 50%;
+    width: 30%;
 }
 
 .project-container h3 {
     font-size: 1.8em;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 
@@ -21,8 +22,26 @@
 
 .project-container span {
     width: 75%;
-    margin-top: 5px;
 
     font-size: 1.15em;
     text-align: center;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .project-container {
+        height: 65%;
+        width: 80%;
+        margin-bottom: 50px;
+
+        justify-content: center;
+    }
+
+    .project-container span {
+        margin-top: 30px;
+    }
+
+    .project-container h3 {
+        font-size: 1.5em;
+    }
 }

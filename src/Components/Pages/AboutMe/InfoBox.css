@@ -1,9 +1,8 @@
 .container {
-  max-height: 300px;
-  max-width: 600px;
-  
-  border-radius: 40px;
-  padding: 0 30px;
+  width: 50%;
+
+  border-radius: 10px;
+  padding: 0 30px 0 15px;
 
   background: linear-gradient(
     90deg,
@@ -28,14 +27,20 @@
 .title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   margin-left: 15px;
 }
 
-.title img {
+.title .info-icon {
   height: auto;
   width: 3vw;
 
   margin-right: 15px;
+}
+
+.title .collapse-icon {
+  margin-left: auto;
+    height: auto;
+    width: 30px;
 }

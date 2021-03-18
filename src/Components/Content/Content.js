@@ -3,7 +3,7 @@ import Loading from '../Loading/Loading';
 import './Content.css';
 
 export default class Content extends React.Component {
-    
+
     constructor() {
         super()
 
@@ -13,12 +13,12 @@ export default class Content extends React.Component {
     }
 
     setLoaded = () => {
-        this.setState({loaded: true});
+        this.setState({ loaded: true });
     }
 
     componentDidUpdate(nextProps) {
         if (nextProps.children !== this.props.children) {
-            this.setState({loaded: false});
+            this.setState({ loaded: false });
         }
     }
 
