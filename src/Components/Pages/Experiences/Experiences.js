@@ -20,7 +20,7 @@ export default class Experiences extends React.Component {
     render() {
         return (
             <section className='formation-experiences-container'>
-                <div id="formations-container" className="snap_section">
+                <div id="formations-container">
                     <h3>Formation</h3>
                     <div className="formation-cards">
                         <div className="formation-card">
@@ -47,7 +47,7 @@ export default class Experiences extends React.Component {
                     loop
                     src={process.env.PUBLIC_URL + "/animations/scroll.json"}
                 />
-                <div id="experiences-container" className="snap_section">
+                <div id="experiences-container">
                     <h3>Expérience</h3>
                     <div className="experience-cards">
                         <div className="experience-card">
