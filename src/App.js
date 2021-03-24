@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+
 import WelcomeScreen from './WelcomeScreen';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import Navbar from './Components/Navbar/Navbar';
@@ -7,7 +9,9 @@ import Experiences from './Components/Pages/Experiences/Experiences';
 import Projects from './Components/Pages/Projects/Projects';
 import Contact from './Components/Pages/Contact/Contact';
 import Content from './Components/Content/Content';
-import './App.css';
+
+import Particles from 'react-particles-js';
+let json = require('./main-particles.json');
 
 export default class App extends React.Component {
   constructor(props) {
@@ -45,6 +49,7 @@ export default class App extends React.Component {
     return (
       <div className="App" >
         <WelcomeScreen />
+        <Particles className="particles" params={json}/>
         <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
         <Content>
           {this.selectContent()}
