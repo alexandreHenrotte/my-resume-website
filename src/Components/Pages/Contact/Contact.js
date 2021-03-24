@@ -12,9 +12,9 @@ export default class Contact extends React.Component {
             message: ""
         }
     }
-    
+
     handleChange = (event) => {
-        this.setState({[event.target.name]: event.target.value});
+        this.setState({ [event.target.name]: event.target.value });
     }
 
     sendForm = (event) => {
@@ -26,13 +26,13 @@ export default class Contact extends React.Component {
     render() {
         return (
             <section className='contact-container'>
-                <Particles className="particles"/>
+                <Particles className="particles" />
                 <div id="contact-form">
                     <h3>Contactez-moi</h3>
                     <form>
-                        <input type="text" placeholder="Nom" name="name" onChange={this.handleChange}/>
-                        <input type="email" placeholder="Mail" name="mail" onChange={this.handleChange}/>
-                        <input type="textarea" placeholder="Message" name="message" onChange={this.handleChange}/>
+                        <input type="text" placeholder="Nom" name="name" onChange={this.handleChange} />
+                        <input type="email" placeholder="Mail" name="mail" onChange={this.handleChange} />
+                        <input type="textarea" placeholder="Message" name="message" onChange={this.handleChange} />
                         <button onClick={(this.sendForm)}>Envoyer</button>
                     </form>
                 </div>

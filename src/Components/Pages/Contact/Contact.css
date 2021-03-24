@@ -59,3 +59,10 @@
     border: none;
     background: linear-gradient(98.5deg, #112B85 6.99%, rgba(33, 58, 147, 0.48) 92.43%);
 }
+
+
+@media screen and (max-width: 800px) {
+    .particles {
+        visibility: hidden;
+    }
+}
