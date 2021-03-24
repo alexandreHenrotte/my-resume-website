@@ -19,9 +19,9 @@ export default class Experiences extends React.Component {
 
     render() {
         return (
-            <section className='formation-experiences-container'>
+            <section className="formation-experiences-container">
                 <div id="formations-container">
-                    <h3>Formation</h3>
+                    <h3 className="card-section-title">Formation</h3>
                     <div className="formation-cards">
                         <div className="formation-card">
                             <img src={process.env.PUBLIC_URL + "/images/experiences/henallux.png"} alt="Henallux school logo"></img>
@@ -48,7 +48,7 @@ export default class Experiences extends React.Component {
                     src={process.env.PUBLIC_URL + "/animations/scroll.json"}
                 />
                 <div id="experiences-container">
-                    <h3>Expérience</h3>
+                    <h3 className="card-section-title">Expérience</h3>
                     <div className="experience-cards">
                         <div className="experience-card">
                             <span className="experience-name">Technicien en réseau informatique (job étudiant)</span>
