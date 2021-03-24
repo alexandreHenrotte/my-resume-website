@@ -9,14 +9,14 @@ export default class Skills extends React.Component {
                 <div className="row">
                     <div className="column">
                         <h3>Programmation</h3>
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/java.png",
                                 alt: "Java Logo"
                             }}
                             skillName="Java"
                         />
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/python.png",
                                 alt: "Python Logo"
@@ -26,21 +26,21 @@ export default class Skills extends React.Component {
                     </div>
                     <div className="column">
                         <h3>Web - Front end</h3>
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/html5.png",
                                 alt: "HTML Logo"
                             }}
                             skillName="HTML"
                         />
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/css3.png",
                                 alt: "CSS Logo"
                             }}
                             skillName="CSS"
                         />
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/javascript.png",
                                 alt: "Javascript Logo"
@@ -50,7 +50,7 @@ export default class Skills extends React.Component {
                     </div>
                     <div className="column">
                         <h3>Web - Back end</h3>
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/nodejs.png",
                                 alt: "Node.js Logo"
@@ -62,17 +62,17 @@ export default class Skills extends React.Component {
                 <div className="row">
                     <div className="column">
                         <h3>Base de données</h3>
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/mssql.png",
                                 alt: "Microsoft SQL Server Logo"
                             }}
-                            skillName="Microsoft SQL Server"
+                            skillName="MSSQL"
                         />
                     </div>
                     <div className="column">
                         <h3>Gestion de versions</h3>
-                        <SkillBox 
+                        <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/git.png",
                                 alt: "Git Logo"
