@@ -26,7 +26,6 @@ export default class Contact extends React.Component {
     render() {
         return (
             <section className='contact-container'>
-                <Particles className="particles" />
                 <div id="contact-form">
                     <h3>Contactez-moi</h3>
                     <form>
