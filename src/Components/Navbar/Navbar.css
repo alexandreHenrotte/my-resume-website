@@ -1,7 +1,6 @@
 #navbar-wrapper {
   position: fixed;
-
-  height: 100vh;
+  z-index: 2;
 
   display: flex;
   flex-direction: row;
@@ -103,4 +102,13 @@ nav ul {
 }
 .normal-page:hover {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+  #toggle-navbar-icon {
+    display: none;
+  }
 }
