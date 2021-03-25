@@ -39,6 +39,7 @@
 @media screen and (max-width: 1000px) {
   .row {
     padding: 0;
+    justify-content: center;
   }
 
   .column {
