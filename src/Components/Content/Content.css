@@ -1,13 +1,13 @@
 #content {
+  position: relative;
   height: 100vh;
-  width: 95vw;
+  width: 100%;
+  padding-left: 8%;
 
-  margin-left: 8vw;
-
-  transition: transform 1s ease-out;
+  transition: padding-left 1s ease-out;
 }
 #content.without-navbar {
-  transform: translate(-5vw);
+  padding-left: 0;
 }
 
 #page {
@@ -23,4 +23,10 @@
 .page-visible {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  #content {
+    padding: 0;
+  }
 }
