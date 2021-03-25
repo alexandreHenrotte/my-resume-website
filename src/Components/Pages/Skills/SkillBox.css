@@ -1,4 +1,4 @@
-#parallelogram {
+.skill-box {
   width: 80%;
   height: 100px;
   display: flex;
@@ -15,13 +15,13 @@
   margin: 15px 0;
 }
 
-#parallelogram img {
+.skill-box img {
   height: auto;
   width: 20%;
   margin-left: 15%;
 }
 
-#parallelogram span {
+.skill-box span {
   margin: auto;
   font-size: 1.2em;
   color: #040c58;
