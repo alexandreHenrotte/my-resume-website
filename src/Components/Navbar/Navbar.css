@@ -1,5 +1,6 @@
 #navbar-wrapper {
   position: fixed;
+  left: 0;
   z-index: 2;
 
   display: flex;
@@ -15,7 +16,7 @@
 
 nav {
   height: 100vh;
-  width: 6vw;
+  width: 112px;
   background: #f5f5f5;
 
   display: flex;
@@ -104,11 +105,28 @@ nav ul {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 900px) {
-  nav {
-    display: none;
+@media screen and (max-width: 800px) {
+
+  #navbar-wrapper {
+    bottom: 0;
+    position: fixed;
   }
+
+  nav {
+    height: min-content;
+    width: 100vw;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
   #toggle-navbar-icon {
     display: none;
   }
+
+  .nav-icon span {
+    display: none;
+  }
+  
 }
