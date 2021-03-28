@@ -7,7 +7,7 @@ export default class AboutMe extends React.Component {
     render() {
         return (
             <section className='about-me-container'>
-                <div className='left-info'>
+                <div className='info-column'>
                     <h1 id="title-name">Henrotte Alexandre</h1>
                     <img id="profile-pic" src={process.env.PUBLIC_URL + "/images/about-me/profile-pic.png"} alt="Henrotte Alexandre" />
                     <ul className="profile-infos">
@@ -31,7 +31,7 @@ export default class AboutMe extends React.Component {
                         </li>
                     </ul>
                 </div>
-                <div className='right-info'>
+                <div className='info-column'>
                     {
                         <InfoBox
                             image={{
@@ -40,16 +40,16 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Langues"
                             content={
-                                    <div className="languages-container">
-                                        <div className="language-box">
-                                            <span className="language-name">Français</span>
-                                            <span className="language-level">Langue maternelle</span>
-                                        </div>
-                                        <div className="language-box">
-                                            <span className="language-name">Anglais</span>
-                                            <span className="language-level">Niveau B2</span>
-                                        </div>
+                                <div className="languages-container">
+                                    <div className="language-box">
+                                        <span className="language-name">Français</span>
+                                        <span className="language-level">Langue maternelle</span>
                                     </div>
+                                    <div className="language-box">
+                                        <span className="language-name">Anglais</span>
+                                        <span className="language-level">Niveau B2</span>
+                                    </div>
+                                </div>
                             }
                         />
                     }
@@ -61,12 +61,12 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Centres d'intérêts"
                             content={
-                                    <div className="interests-container">
-                                        <span className="interest">♥ Développement (logiciel et web)</span>
-                                        <span className="interest">♥ Jeux vidéo</span>
-                                        <span className="interest">♥ Livres</span>
-                                        <span className="interest">♥ Cinéma</span>
-                                    </div>
+                                <div className="interests-container">
+                                    <span className="interest">♥ Développement (logiciel et web)</span>
+                                    <span className="interest">♥ Jeux vidéo</span>
+                                    <span className="interest">♥ Livres</span>
+                                    <span className="interest">♥ Cinéma</span>
+                                </div>
                             }
                         />
                     }
@@ -78,11 +78,11 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Soft skills"
                             content={
-                                    <ul id="soft-skills">
-                                        <li>Passion</li>
-                                        <li>Persévérance</li>
-                                        <li>Curiosité</li>
-                                    </ul>
+                                <ul id="soft-skills">
+                                    <li>Passion</li>
+                                    <li>Persévérance</li>
+                                    <li>Curiosité</li>
+                                </ul>
                             }
                         />
                     }
