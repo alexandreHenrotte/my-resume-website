@@ -2,6 +2,9 @@ import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import './Loading.css';
 
+import Particles from 'react-particles-js';
+let json = require('../../main-particles.json');
+
 export default class Loading extends React.Component {
     constructor() {
         super()
@@ -13,16 +16,17 @@ export default class Loading extends React.Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
         document.documentElement.style.overflow = 'hidden';  // firefox, chrome
         document.body.scroll = "no"; // ie only
 
-        var interval = setInterval(this.loading, 1500)
-        this.setState({interval: interval})
+        var interval = setInterval(this.loading, 1000)
+        this.setState({ interval: interval })
     }
 
     loading = () => {
         if (this.state.level < 100)
-            this.setState({level: this.state.level + 100});
+            this.setState({ level: this.state.level + 100 });
         else {
             clearInterval(this.state.interval);
             this.loaded();
@@ -37,12 +41,9 @@ export default class Loading extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <div id="loading-container">
-                <span id="loading-text">Chargement...</span>
-                <div id="loading-bar">
-                    <ProgressBar completed={this.state.level} bgcolor="#1447AA" isLabelVisible={false}/>
-                </div>
+                <img src={process.env.PUBLIC_URL + "/animations/loading.svg"} alt="loading animation" />
             </div>
         )
     }
