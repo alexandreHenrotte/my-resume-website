@@ -1,31 +1,39 @@
 #loading-container {
-  position: absolute;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  width: 95vw;
-  height: 100vh;
-
-  top: -100px;
-
-  animation: slide-in 7s;
+  height: 100%;
+  width: 100%;
 }
 
-#loading-text {
-  font-size: 1.6em;
-  margin-bottom: 15px;
+#loading-container img {
+  height: auto;
+  width: 130px;
+
+  background: #040c58;
+
+  animation: loading-image-appear 1s ease-out;
 }
 
-#loading-bar {
-  width: 50%;
-}
-
-@keyframes slide-in {
-  35% {
-    top: 45vh;
+@keyframes loading-image-appear {
+  0% {
+    opacity: 0;
   }
-  70% {
-    top: 200vh;
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  #loading-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #loading-container img {
+    width: 100px;
   }
 }
