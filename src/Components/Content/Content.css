@@ -27,6 +27,7 @@
 
 @media screen and (max-width: 900px) {
   #content {
-    padding: 0;
+    padding-left: 0;
+    padding-bottom: 20%;
   }
 }
