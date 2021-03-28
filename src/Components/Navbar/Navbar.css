@@ -108,7 +108,7 @@ nav ul {
 @media screen and (max-width: 800px) {
 
   #navbar-wrapper {
-    bottom: 0;
+    top: 0;
     position: fixed;
   }
 
