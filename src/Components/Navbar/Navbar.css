@@ -51,6 +51,9 @@ nav ul {
 
   cursor: pointer;
 }
+.nav-icon img:focus {
+  outline: none;
+}
 
 .nav-icon span {
   position: absolute;
