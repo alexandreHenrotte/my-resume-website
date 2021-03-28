@@ -49,7 +49,7 @@ export default class App extends React.Component {
     return (
       <div className="App" >
         <WelcomeScreen />
-        <Particles className="particles" params={json}/>
+        <Particles className="main-particles" params={json} />
         <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
         <Content>
           {this.selectContent()}
