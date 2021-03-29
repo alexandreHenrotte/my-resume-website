@@ -21,21 +21,23 @@
 
 #title-name {
   font-weight: normal;
-  font-size: 2vw;
+  font-size: 31px;
 
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 #profile-pic {
   height: auto;
   width: 180px;
+
+  margin: 20px;
 }
 
 .profile-infos {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   list-style: none;
@@ -47,18 +49,18 @@
 
 .text-separator {
   color: #1f46ab;
-  font-size: 1.8vw;
+  font-size: 30px;
 }
 
 #text-about-me {
   text-align: center;
-  width: 35vw;
+  width: 75%;
 
   border-top: 2px solid #1f46ab;
   border-bottom: 2px solid #1f46ab;
 
-  padding: 1vh 0px;
-  margin: 0 0 20px 0;
+  padding: 8px 0px;
+  margin: 20px 0;
 }
 
 .social-networks {
@@ -70,7 +72,7 @@
 
   list-style: none;
 
-  width: 10vw;
+  width: 155px;
   padding: 0;
 
   margin-top: 20px;
