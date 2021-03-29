@@ -47,7 +47,7 @@ nav ul {
 .nav-icon img {
   margin: auto;
   height: auto;
-  width: 35%;
+  width: 35px;
 
   cursor: pointer;
 }
@@ -125,6 +125,10 @@ nav ul {
 
   #toggle-navbar-icon {
     display: none;
+  }
+
+  .nav-icon img {
+    width: 28px;
   }
 
   .nav-icon span {
