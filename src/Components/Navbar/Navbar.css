@@ -11,7 +11,7 @@
   transform: translate(0px);
 }
 #navbar-wrapper.hided {
-  transform: translate(-111px);
+  transform: translate(-112px);
 }
 
 nav {
@@ -109,7 +109,6 @@ nav ul {
 }
 
 @media screen and (max-width: 800px) {
-
   #navbar-wrapper {
     top: 0;
     position: fixed;
@@ -131,5 +130,4 @@ nav ul {
   .nav-icon span {
     display: none;
   }
-  
 }
