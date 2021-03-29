@@ -1,4 +1,5 @@
 import React from 'react';
+import { $ }  from 'react-jquery-plugin';
 import './Contact.css';
 
 export default class Contact extends React.Component {
@@ -12,8 +13,21 @@ export default class Contact extends React.Component {
         }
     }
 
+    componentDidMount() {
+        this.textAreaAutoResize();
+    }
+
     handleChange = (event) => {
         this.setState({ [event.target.name]: event.target.value });
+    }
+
+    textAreaAutoResize() {
+        $("textarea").each(function () {
+            this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+          }).on("input", function () {
+            this.style.height = "auto";
+            this.style.height = (this.scrollHeight) + "px";
+          });
     }
 
     sendForm = (event) => {
@@ -28,9 +42,9 @@ export default class Contact extends React.Component {
                 <div id="contact-form">
                     <h3>Contactez-moi</h3>
                     <form>
-                        <input type="text" placeholder="Nom" name="name" onChange={this.handleChange} />
-                        <input type="email" placeholder="Mail" name="mail" onChange={this.handleChange} />
-                        <input type="textarea" placeholder="Message" name="message" onChange={this.handleChange} />
+                        <input type="text" placeholder="Nom" name="name" onChange={this.handleChange} autocomplete="new-password"/>
+                        <input type="email" placeholder="Mail" name="mail" onChange={this.handleChange} autocomplete="new-password"/>
+                        <textarea placeholder="Message" name="message" onChange={this.handleChange} autocomplete="new-password"/>
                         <button onClick={(this.sendForm)}>Envoyer</button>
                     </form>
                 </div>
