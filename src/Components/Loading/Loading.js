@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 import './Loading.css';
 
 import Particles from 'react-particles-js';
