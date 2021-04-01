@@ -7,7 +7,7 @@ export default class ProjectContainer extends React.Component {
         console.log(`https://github.com/${this.props.githubProjectName}`);
         return (
             <div className='project-container'>
-                    <h3>{this.props.title}</h3>
+                    <h3 className="project-name">{this.props.title}</h3>
                     <div class="ih-item circle colored effect1">
                         <a href={`https://github.com/${this.props.githubProjectName}`} target="_blank" rel="noreferrer">
                             <div class="spinner"></div>
