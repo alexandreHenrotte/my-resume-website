@@ -1,17 +1,23 @@
-.interests-container {
-  padding: 10px 0px;
+.softskills-container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
+  flex-direction: row;
+  justify-content: center;
 
-.interest {
-  margin: 5px 15px;
-  padding: 5px 10px;
-  border-radius: 3px;
+  width: 100%;
+
+  list-style: none;
+  padding: 10px 0px;
+
   background-color: white;
   -webkit-box-shadow: 0px 2.5px 9px 1px rgba(180, 180, 180, 0.75);
   -moz-box-shadow: 2.5px 2.5px 9px 1px rgba(180, 180, 180, 0.75);
   box-shadow: 0px 0px 2px 1.5px rgba(180, 180, 180, 0.75);
+}
+
+.softskill {
+  font-size: 1.2em;
+}
+
+.softskills-separator {
+  margin: 0 30px;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import './InfoBox.css'
 import './Languages.css'
 import './Interests.css'
+import './Softskills.css'
 
 export default class InfoBox extends React.Component {
     constructor() {
