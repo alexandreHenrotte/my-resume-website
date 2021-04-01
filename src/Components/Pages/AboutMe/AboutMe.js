@@ -62,10 +62,10 @@ export default class AboutMe extends React.Component {
                             title="Centres d'intérêts"
                             content={
                                 <div className="interests-container">
-                                    <span className="interest">♥ Développement (logiciel et web)</span>
-                                    <span className="interest">♥ Jeux vidéo</span>
-                                    <span className="interest">♥ Livres</span>
-                                    <span className="interest">♥ Cinéma</span>
+                                    <span className="interest">Développement (logiciel et web)</span>
+                                    <span className="interest">Jeux vidéo</span>
+                                    <span className="interest">Livres</span>
+                                    <span className="interest">Cinéma</span>
                                 </div>
                             }
                         />
@@ -78,10 +78,12 @@ export default class AboutMe extends React.Component {
                             }}
                             title="Soft skills"
                             content={
-                                <ul id="soft-skills">
-                                    <li>Passion</li>
-                                    <li>Persévérance</li>
-                                    <li>Curiosité</li>
+                                <ul className="softskills-container">
+                                    <li className="softskill">Passion</li>
+                                    <li className="softskills-separator">-</li>
+                                    <li className="softskill">Persévérance</li>
+                                    <li className="softskills-separator">-</li>
+                                    <li className="softskill">Curiosité</li>
                                 </ul>
                             }
                         />
