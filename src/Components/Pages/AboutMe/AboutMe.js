@@ -42,12 +42,12 @@ export default class AboutMe extends React.Component {
                             content={
                                 <div className="languages-container">
                                     <div className="language-box">
-                                        <span className="language-name">Français</span>
-                                        <span className="language-level">Langue maternelle</span>
+                                        <img className="language-flag" src={process.env.PUBLIC_URL + "/images/about-me/languages/french.png"} alt="French flag"></img>
+                                        <span className="language-name">Français – langue maternelle</span>
                                     </div>
                                     <div className="language-box">
-                                        <span className="language-name">Anglais</span>
-                                        <span className="language-level">Niveau B2</span>
+                                        <img className="language-flag" src={process.env.PUBLIC_URL + "/images/about-me/languages/uk.png"} alt="UK flag"></img>
+                                        <span className="language-name">Anglais – niveau B2</span>
                                     </div>
                                 </div>
                             }
