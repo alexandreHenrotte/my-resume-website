@@ -1,9 +1,12 @@
 .interests-container {
-  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 10px 0px;
 }
 
 .interest {
