@@ -30,7 +30,7 @@ export default class InfoBox extends React.Component {
                     <h3>{this.props.title}</h3>
                     <img className="collapse-icon" src={process.env.PUBLIC_URL + "/icons/about-me/chevron.svg"} alt="Collapse icon"></img>
                 </div>
-                <div className={this.state.opened ? "info" : "hided"}>
+                <div className={this.state.opened ? "visible-info" : "hidden-info"}>
                     {this.props.content}
                 </div>
             </div >

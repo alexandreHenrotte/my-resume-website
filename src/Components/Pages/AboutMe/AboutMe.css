@@ -37,12 +37,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   list-style: none;
 
-  width: 50%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -50,6 +50,7 @@
 .text-separator {
   color: #1f46ab;
   font-size: 30px;
+  margin: 0 15px;
 }
 
 #text-about-me {
@@ -81,13 +82,24 @@
 }
 .social-networks li img {
   width: auto;
-  height: 5vh;
+  height: 38px;
   margin: 0 5px;
 }
 
 @media screen and (max-width: 1280px) {
   .info-column {
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .profile-infos {
+    flex-direction: column;
+  }
+
+  .text-separator {
+    display: none;
   }
 }
