@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import WelcomeScreen from './WelcomeScreen';
+import WelcomeScreen from './Components/WelcomeScreen/WelcomeScreen';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import Navbar from './Components/Navbar/Navbar';
 import Skills from './Components/Pages/Skills/Skills';
