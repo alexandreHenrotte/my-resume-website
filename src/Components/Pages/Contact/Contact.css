@@ -80,4 +80,14 @@
   .particles {
     visibility: hidden;
   }
+
+  #contact-form {
+    height: auto;
+    height: auto;
+  }
+
+  #contact-form form {
+    height: auto;
+    width: auto;
+  }
 }
