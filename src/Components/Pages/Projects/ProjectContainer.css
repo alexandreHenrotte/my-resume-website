@@ -10,8 +10,9 @@
 
 .project-name {
   font-size: 1.8em;
+  padding: 15px;
+  padding-bottom: 30px;
   margin: 0;
-  margin-bottom: 35px;
 
   background-color: #040c58;
 }
@@ -30,8 +31,12 @@
   background-color: #040c58;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1470px) {
   .project-container h3 {
     font-size: 1.5em;
+  }
+
+  .project-container span {
+    margin-bottom: 50px;
   }
 }
