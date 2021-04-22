@@ -32,8 +32,12 @@ export default class Contact extends React.Component {
 
     sendForm = (event) => {
         event.preventDefault();
-        var text = `Envoi du message\r\nNom: ${this.state.name}\r\nMail: ${this.state.mail}\r\nMessage: ${this.state.message}`;
-        alert(text);
+        
+        var message = `Cette fonctionnalité est en cours de développement mais vous pouvez toujours m'envoyer un mail à l'adresse suivante : \r\n\r\nalexandre.henrotte1@gmail.com`;
+        alert(message);
+
+        var log = `Nom: ${this.state.name}\r\nMail: ${this.state.mail}\r\nMessage: ${this.state.message}`;
+        console.log(log);
     }
 
     render() {
