@@ -62,7 +62,7 @@ export default class Experiences extends React.Component {
                             <span className="secondary-text">LuxVoip S.A.R.L</span>
                             <span className="secondary-text">03/2019 - 04/2019 | Rodange, Luxembourg</span>
                             <span className="experience-text">Installation du réseau filaire d'un nouveau bâtiment de l'ESA (European Space Agency).</span>
-                            <span className="experience-acquired">Acquis : organisation, respect des délais</span>
+                            <span className="experience-acquired">Acquis : patience, importance du détail</span>
                         </div>
                     </div>
                 </div>
