@@ -4,7 +4,6 @@ import '../../../utils/ihover.css'
 
 export default class ProjectContainer extends React.Component {
     render() {
-        console.log(`https://github.com/${this.props.githubProjectName}`);
         return (
             <div className='project-container'>
                     <h3 className="project-name">{this.props.title}</h3>
