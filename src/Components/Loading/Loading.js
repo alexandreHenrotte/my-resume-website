@@ -1,9 +1,6 @@
 import React from "react";
 import './Loading.css';
 
-import Particles from 'react-particles-js';
-let json = require('../../main-particles.json');
-
 export default class Loading extends React.Component {
     constructor() {
         super()
