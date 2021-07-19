@@ -3,17 +3,24 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from 'emailjs-com'
 import { $ }  from 'react-jquery-plugin';
+import ReCAPTCHA from "react-google-recaptcha";
 import './Contact.css';
 
 export default class Contact extends React.Component {
+
+    
+
     constructor() {
         super();
 
+        
         this.state = {
             name: "",
             mail: "",
-            message: ""
+            message: "",
+            captchaCompleted: false
         }
+        this.captchaRef = React.createRef();
     }
 
     componentDidMount() {
@@ -36,12 +43,15 @@ export default class Contact extends React.Component {
     handleForm = (event) => {
         event.preventDefault();
 
-        if (this.state.name !== "" && this.state.mail !== "" && this.state.message !== "") {
-            this.sendForm();
-            this.resetForm();
+        if (this.state.name === "" || this.state.mail === "" || this.state.message === "") {
+            this.formNotValidError();
+        }
+        else if (!this.state.captchaCompleted) {
+            this.missingCaptchaError();
         }
         else {
-            this.formNotValid();
+            this.sendForm();
+            this.resetForm();
         }
     }
 
@@ -93,7 +103,19 @@ export default class Contact extends React.Component {
         });
     }
 
-    formNotValid() {
+    missingCaptchaError() {
+        toast.error("Veuillez compléter le captcha", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+    }
+
+    formNotValidError() {
         toast.error("Le formulaire de contact est incomplet 😕", {
             position: "top-right",
             autoClose: 5000,
@@ -106,7 +128,12 @@ export default class Contact extends React.Component {
     }
 
     resetForm() {
-        this.setState({name: "", email: "", message: ""});
+        this.setState({name: "", mail: "", message: "", captchaCompleted: false});
+        this.captchaRef.current.reset();
+    }
+
+    captchaCompleted = () => {
+        this.setState({captchaCompleted: true});
     }
 
     render() {
@@ -117,8 +144,15 @@ export default class Contact extends React.Component {
                     <h3>Contactez-moi</h3>
                     <form>
                         <input type="text" placeholder="Nom" name="name" value={this.state.name} onChange={this.handleChange} autocomplete="new-password"/>
-                        <input type="email" placeholder="Mail" name="mail" value={this.state.email} onChange={this.handleChange} autocomplete="new-password"/>
+                        <input type="email" placeholder="Mail" name="mail" value={this.state.mail} onChange={this.handleChange} autocomplete="new-password"/>
                         <textarea placeholder="Message" name="message" value={this.state.message} onChange={this.handleChange} autocomplete="new-password"/>
+                        <div id="recaptcha-container">
+                            <ReCAPTCHA
+                                ref={this.captchaRef}
+                                sitekey="6Lfu36gbAAAAAHZUlw5qzizMjCujynRiJxHg5yOi"
+                                onChange={this.captchaCompleted}
+                            />
+                        </div>
                         <button onClick={(this.handleForm)}>Envoyer</button>
                     </form>
                 </div>
