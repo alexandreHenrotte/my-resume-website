@@ -5,13 +5,15 @@
   align-items: center;
 
   height: max-content;
-  width: max-content;
+  width: min-content;
+
+  padding: 30px 55px;
 }
 
 .project-name {
+  width: max-content;
+  padding-bottom: 25px;
   font-size: 1.8em;
-  padding: 15px;
-  padding-bottom: 30px;
   margin: 0;
 
   background-color: #040c58;
@@ -22,7 +24,7 @@
 }
 
 .project-container span {
-  width: 75%;
+  width: 100%;
   margin-top: 35px;
 
   font-size: 1.15em;

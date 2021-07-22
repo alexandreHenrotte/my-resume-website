@@ -16,6 +16,15 @@ export default class Projects extends React.Component {
                     text="Bot Twitter postant journalièrement des statistiques sur l'état du Covid-19 en Belgique."
                 />
                 <ProjectContainer
+                    title="SleepWell"
+                    githubProjectName="alexandreHenrotte/SleepWell"
+                    img= {{
+                        src: process.env.PUBLIC_URL + "/images/projects/sleepwell.jpg",
+                        alt: "SleepWell Project"
+                    }}
+                    text="Site web indiquant les meilleures heures pour aller dormir en se basant sur les cycles du sommeil."
+                />
+                <ProjectContainer
                     title="Stock Manager (en cours)"
                     githubProjectName="alexandreHenrotte/stock-manager"
                     img= {{
