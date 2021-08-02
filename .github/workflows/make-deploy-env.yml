@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: make-deploy-env
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ gh-pages ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  create-env-file:
+    environment: github-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make env file
+        run: |
+          touch .env
+          echo REACT_APP_SERVICE_ID=${{ secrets.REACT_APP_SERVICE_ID }} >> .env
+          echo REACT_APP_TEMPLATE_ID=${{ secrets.REACT_APP_TEMPLATE_ID }} >> .env
+          echo REACT_APP_USER_ID=${{ secrets.REACT_APP_USER_ID }} >> .env
