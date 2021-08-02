@@ -1,0 +1,137 @@
+#navbar-wrapper {
+  position: fixed;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  transition: transform 1s ease-out;
+  transform: translate(0px);
+}
+#navbar-wrapper.hided {
+  transform: translate(-95px);
+}
+
+nav {
+  height: 100vh;
+  width: 94px;
+  background: white;
+
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  height: 60%;
+  width: 100%;
+
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-icon img {
+  margin: auto;
+  height: auto;
+  width: 35px;
+
+  cursor: pointer;
+}
+.nav-icon img:focus {
+  outline: none;
+}
+
+.nav-icon span {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+
+  top: 120%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  font-size: 12.5px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+
+  transition: opacity 0.35s ease-in;
+}
+
+.nav-icon:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+#toggle-navbar-icon {
+  position: relative;
+  height: 76px;
+  width: auto;
+
+  cursor: pointer;
+}
+
+/* Change the color of the icon and the text representing the actual page */
+
+.active-page {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(71%) saturate(2211%)
+    hue-rotate(214deg) brightness(101%) contrast(96%);
+}
+.active-page + span {
+  color: #1f46ab;
+}
+
+/* Apply some opacity on icons representing the pages that are not the actual page */
+
+.normal-page {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+.normal-page:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-wrapper {
+    top: 0;
+    position: fixed;
+  }
+
+  nav {
+    height: min-content;
+    width: 100vw;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  #toggle-navbar-icon {
+    display: none;
+  }
+
+  .nav-icon img {
+    width: 28px;
+  }
+
+  .nav-icon span {
+    display: none;
+  }
+}

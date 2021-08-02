@@ -1,0 +1,39 @@
+#loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#loading-container img {
+  height: auto;
+  width: 130px;
+
+  background: #040c58;
+
+  animation: loading-image-appear 1s ease-out;
+}
+
+@keyframes loading-image-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  #loading-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #loading-container img {
+    width: 100px;
+  }
+}
