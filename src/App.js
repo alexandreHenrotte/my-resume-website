@@ -23,6 +23,7 @@ export default class App extends React.Component {
   }
 
   selectContent = () => {
+    // eslint-disable-next-line
     switch (this.state.currentContent) {
       case "about-me":
         return <AboutMe />;
