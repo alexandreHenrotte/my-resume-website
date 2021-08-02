@@ -1,22 +1,26 @@
-# This is a basic workflow to help you get started with Actions
-
-name: make-deploy-env
-
-# Controls when the workflow will run
+name: Build and Deploy
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ gh-pages ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    branches:
+      - master
 jobs:
-  create-env-file:
-    environment: github-pages
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Make env file
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
+          npm install
           touch .env
           echo REACT_APP_SERVICE_ID=${{ secrets.REACT_APP_SERVICE_ID }} >> .env
           echo REACT_APP_TEMPLATE_ID=${{ secrets.REACT_APP_TEMPLATE_ID }} >> .env
           echo REACT_APP_USER_ID=${{ secrets.REACT_APP_USER_ID }} >> .env
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: . # The folder the action should deploy.
