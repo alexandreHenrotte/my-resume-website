@@ -1,12 +1,17 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import './WelcomeScreen.css';
 
 
 export default class WelcomeScreen extends React.Component {
 
     getRandomSentence() {
-        var array = ["Passioné d'informatique", "Curieux et envieux d'apprendre", "Étudiant en informatique"];
-        var sentence = array[Math.floor(Math.random() * array.length)];
+        var sentences = [
+            <Trans>welcome-screen.sentences.1</Trans>,
+            <Trans>welcome-screen.sentences.2</Trans>,
+            <Trans>welcome-screen.sentences.3</Trans>
+        ];
+        var sentence = sentences[Math.floor(Math.random() * sentences.length)];
         return sentence;
     }
 
