@@ -11,6 +11,7 @@ import Contact from './Components/Pages/Contact/Contact';
 import Content from './Components/Content/Content';
 
 import Particles from 'react-particles-js';
+import LangSelect from './i18n/LangSelect';
 let json = require('./main-particles.json');
 
 export default class App extends React.Component {
@@ -53,6 +54,7 @@ export default class App extends React.Component {
         <Particles className="main-particles" params={json} />
         <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
         <Content>
+          <LangSelect action={() => this.forceUpdate()}/>
           {this.selectContent()}
         </Content>
       </div>
