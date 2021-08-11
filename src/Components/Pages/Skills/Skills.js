@@ -11,6 +11,13 @@ export default class Skills extends React.Component {
                         <h3>Programmation</h3>
                         <SkillBox
                             img={{
+                                src: process.env.PUBLIC_URL + "/images/skills/c-sharp.png",
+                                alt: "C# Logo"
+                            }}
+                            skillName="C#"
+                        />
+                        <SkillBox
+                            img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/java.png",
                                 alt: "Java Logo"
                             }}
@@ -47,15 +54,29 @@ export default class Skills extends React.Component {
                             }}
                             skillName="Javascript"
                         />
+                        <SkillBox
+                            img={{
+                                src: process.env.PUBLIC_URL + "/images/skills/react.png",
+                                alt: "React Logo"
+                            }}
+                            skillName="React.js"
+                        />
                     </div>
                     <div className="column">
                         <h3>Web - Back end</h3>
                         <SkillBox
                             img={{
-                                src: process.env.PUBLIC_URL + "/images/skills/nodejs.png",
-                                alt: "Node.js Logo"
+                                src: process.env.PUBLIC_URL + "/images/skills/dot-net-core.png",
+                                alt: ".NET Core Logo"
                             }}
-                            skillName="Node.js"
+                            skillName="ASP.NET Core"
+                        />
+                        <SkillBox
+                            img={{
+                                src: process.env.PUBLIC_URL + "/images/skills/flask.png",
+                                alt: "Flask Logo"
+                            }}
+                            skillName="Flask"
                         />
                     </div>
                 </div>
