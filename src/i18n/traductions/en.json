@@ -1,0 +1,96 @@
+{
+    "common": {
+        "translate-button": "EN"
+    },
+    "welcome-screen": {
+        "sentences": {
+            "1": "Love new technologies",
+            "2": "Curious and eager to learn",
+            "3": "Student in IT"
+        }
+    },
+    "nav-bar": {
+        "profil": "Profile",
+        "skills": "Skills",
+        "formation-experience": "Formation and experience",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "about-me":  {
+        "job": "IT student",
+        "age": "19 yearsold",
+        "description": "Passionate about computers since I was young, I am a person who is thirsty for knowledge and who never give up to achieve his goals.",
+        "languages" : {
+            "title": "Languages",
+            "1": "French – native language",
+            "2": "English – B2 level"
+        },
+        "interests": {
+            "title": "Interests",
+            "1": "Software and web development",
+            "2": "Video games",
+            "3": "Books",
+            "4": "Cinema"
+        },
+        "soft-skills": {
+            "title": "Soft skills",
+            "1": "Passion",
+            "2": "Perseverance",
+            "3": "Curiosity"
+        }
+    },
+    "skills": {
+        "programming": "Programming",
+        "database": "Database",
+        "version-control": "Version control"
+    },
+    "formation-experience": {
+        "formation": {
+            "title": "Formation",
+            "1" : {
+                "title": "IT Bachelor, Computer Technology"
+            },
+            "2" : {
+                "title": "CESS + Qualification : IT Technician"
+            }
+        },
+        "experience": {
+            "title": "Experience",
+            "1" : {
+                "title": "Computer network technician (student job)",
+                "details": "Installation of a new wireless network in several restaurants belonging to the domain of the Caves of Han. My main tasks were the following: install twisted pair cable connectors, configure switches and wireless access points, test wireless network coverage.",
+                "acquired": "Acquired : organization, meeting deadlines"
+            },
+            "2" : {
+                "title": "Computer network technician (internship)",
+                "details": "Installation of the wired network of a new building belonging to the ESA (European Space Agency). My main tasks were the following: install twisted pair cable connectors, mark every cable, test cable connectivity and performance.",
+                "acquired": "Acquired : patience, importance of details"
+            }
+        }
+    },
+    "projects": {
+        "see-on-github": "See on Github",
+        "in-progress": "In progress",
+        "1": {
+            "details": "Automated twitter bot that checks covid statistics in Belgium and put them on twitter every day."
+        },
+        "2": {
+            "details": "Website that tells you when you should go sleep based on night cycles theory."
+        },
+        "3": {
+            "details": "Website where users can follow different products available on the web and be alerted when prices drops."
+        },
+        "see-more-button": "See all my open-source projects (from small to big)"
+    },
+    "contact": {
+        "contact-me": "Contact me",
+        "name": "Name",
+        "send": "Send",
+        "pop-up": {
+            "success": "Message has been sent",
+            "global-error": "The message cannot be send",
+            "captcha-error": "Fill the captcha please",
+            "incomplete-form": "The form is not complete"
+        }
+    }
+}

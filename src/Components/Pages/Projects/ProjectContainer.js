@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import './ProjectContainer.css'
 import '../../../utils/ihover.css'
 
@@ -9,12 +10,12 @@ export default class ProjectContainer extends React.Component {
         var onHoverAltText;
         if (this.props.githubProjectName === undefined) {
             githubUrl = "#";
-            onHoverMainText = "En préparation";
+            onHoverMainText = <Trans>projects.in-progress</Trans>;
             onHoverAltText = "...";
         }
         else {
             githubUrl = `https://github.com/${this.props.githubProjectName}`;
-            onHoverMainText = "Voir sur Github";
+            onHoverMainText = <Trans>projects.see-on-github</Trans>;
             onHoverAltText = this.props.githubProjectName;
         }
 

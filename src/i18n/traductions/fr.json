@@ -1,0 +1,96 @@
+{
+    "common": {
+        "translate-button": "FR"
+    },
+    "welcome-screen": {
+        "sentences": {
+            "1": "Passioné d'informatique",
+            "2": "Curieux et envieux d'apprendre",
+            "3": "Étudiant en informatique"
+        }
+    },
+    "nav-bar": {
+        "profil": "Profil",
+        "skills": "Compétences",
+        "formation-experience": "Formation et expérience",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+    "about-me":  {
+        "job": "Développeur junior",
+        "age": "19 ans",
+        "description": "Passionné par l'informatique depuis mon plus jeune âge, je suis une personne qui a soif de connaissance et qui ne lâche rien pour atteindre ses objectifs",
+        "languages" : {
+            "title": "Langues",
+            "1": "Français – langue maternelle",
+            "2": "Anglais – niveau B2"
+        },
+        "interests": {
+            "title": "Centres d'intérêts",
+            "1": "Développement (logiciel et web)",
+            "2": "Jeux vidéo",
+            "3": "Livres",
+            "4": "Cinéma"
+        },
+        "soft-skills": {
+            "title": "Soft skills",
+            "1": "Passion",
+            "2": "Persévérance",
+            "3": "Curiosité"
+        }
+    },
+    "skills": {
+        "programming": "Programmation",
+        "database": "Base de données",
+        "version-control": "Gestion de versions"
+    },
+    "formation-experience": {
+        "formation": {
+            "title": "Formation",
+            "1" : {
+                "title": "Bachelier en informatique et systèmes, orientation technologie de l’informatique"
+            },
+            "2" : {
+                "title": "CESS + Qualification : technicien en informatique"
+            }
+        },
+        "experience": {
+            "title": "Expérience",
+            "1" : {
+                "title": "Technicien en réseau informatique (job étudiant)",
+                "details": "Installation d'un nouveau réseau Wi-Fi dans plusieurs restaurants du domaine des grottes de Han.",
+                "acquired": "Acquis : organisation, respect des délais"
+            },
+            "2" : {
+                "title": "Technicien en réseau informatique (stage)",
+                "details": "Installation du réseau filaire d'un nouveau bâtiment de l'ESA (European Space Agency).",
+                "acquired": "Acquis : patience, importance du détail"
+            }
+        }
+    },
+    "projects": {
+        "see-on-github": "Voir sur Github",
+        "in-progress": "En préparation",
+        "1": {
+            "details": "Bot Twitter postant journalièrement des statistiques sur l'état du Covid-19 en Belgique."
+        },
+        "2": {
+            "details": "Site web indiquant les meilleures heures pour aller dormir en se basant sur les cycles du sommeil."
+        },
+        "3": {
+            "details": "Site web permettant à l'utilisateur de suivre des produits présents sur plusieurs sites web et de recevoir une alerte lorsque le prix descend."
+        },
+        "see-more-button": "Voir tous mes projets open-source (petits et grands)"
+    },
+    "contact": {
+        "contact-me": "Contactez-moi",
+        "name": "Nom",
+        "send": "Envoyer",
+        "pop-up": {
+            "success": "Message envoyé",
+            "global-error": "Le message n'a pas pu être envoyé",
+            "captcha-error": "Veuillez compléter le captcha",
+            "incomplete-form": "Le formulaire de contact est incomplet"
+        }
+    }
+}

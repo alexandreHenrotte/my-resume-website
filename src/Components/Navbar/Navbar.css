@@ -20,7 +20,14 @@ nav {
   background: white;
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+#langselect-container {
+  position: absolute;
+  top: 10px;
 }
 
 nav ul {
@@ -117,6 +124,10 @@ nav ul {
   nav {
     height: min-content;
     width: 100vw;
+  }
+
+  #langselect-container {
+    display: none;
   }
 
   nav ul {

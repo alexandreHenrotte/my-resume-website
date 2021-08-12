@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import ProjectContainer from './ProjectContainer';
 import './Projects.css';
 
@@ -14,7 +15,7 @@ export default class Projects extends React.Component {
                             src: process.env.PUBLIC_URL + "/images/projects/belgium-covid-tracker.jpg",
                             alt: "Belgium Covid Tracker Project"
                         }}
-                        text="Bot Twitter postant journalièrement des statistiques sur l'état du Covid-19 en Belgique."
+                        text={<Trans>projects.1.details</Trans>}
                     />
                     <ProjectContainer
                         title="SleepWell"
@@ -23,7 +24,7 @@ export default class Projects extends React.Component {
                             src: process.env.PUBLIC_URL + "/images/projects/sleepwell.jpg",
                             alt: "SleepWell Project"
                         }}
-                        text="Site web indiquant les meilleures heures pour aller dormir en se basant sur les cycles du sommeil."
+                        text={<Trans>projects.2.details</Trans>}
                     />
                     <ProjectContainer
                         title="PriceTracker (en cours)"
@@ -31,7 +32,7 @@ export default class Projects extends React.Component {
                             src: process.env.PUBLIC_URL + "/images/projects/pricetracker.png",
                             alt: "PriceTracker"
                         }}
-                        text="Site web permettant à l'utilisateur de suivre des produits présents sur plusieurs sites web et de recevoir une alerte lorsque le prix descend."
+                        text={<Trans>projects.3.details</Trans>}
                     />
                     {/* <ProjectContainer
                         title="Stock Manager (en cours)"
@@ -45,7 +46,7 @@ export default class Projects extends React.Component {
                 </div>
                 <div class='more-projects-container'>
                     <a href="https://github.com/alexandreHenrotte?tab=repositories" target="_blank" rel="noreferrer">
-                        Voir tous mes projets open-source (petits et grands)
+                        <Trans>projects.see-more-button</Trans>
                     </a>
                 </div>
             </section>

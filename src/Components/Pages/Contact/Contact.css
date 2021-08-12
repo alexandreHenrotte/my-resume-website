@@ -106,6 +106,6 @@
   }
 }
 
-#g-recaptcha-response-1 {
+.g-recaptcha-response {
   display: none;
 }
