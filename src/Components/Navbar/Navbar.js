@@ -1,5 +1,6 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
+import LangSelect from '../../i18n/LangSelectComponent/LangSelect';
 import './Navbar.css';
 
 export default class Navbar extends React.Component {
@@ -27,10 +28,21 @@ export default class Navbar extends React.Component {
         });
     }
 
+    onLanguageChange = () => {
+        // Update navbar
+        this.forceUpdate()
+
+        // Update content
+        this.props.onLanguageChange()
+    }
+
     render() {
         return (
             <div id="navbar-wrapper">
                 <nav>
+                    <div id="langselect-container">
+                        <LangSelect action={this.onLanguageChange}/>
+                    </div>
                     <ul className="nav-icons">
                         <li className="nav-icon">
                             <img className={this.props.currentContent === "about-me" ? "active-page" : "normal-page"}
