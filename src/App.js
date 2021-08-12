@@ -46,13 +46,18 @@ export default class App extends React.Component {
     this.setState({ currentContent: newContent });
   }
 
+  onLanguageChange = () => {
+    // Update content without reloading the whole App
+    this.forceUpdate();
+  }
+
   render() {
     return (
       <div className="App" >
         <WelcomeScreen />
         <Particles className="main-particles" params={json} />
-        <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
-        <Content>
+        <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} onLanguageChange={this.onLanguageChange}/>
+        <Content ref={this.contentRef}>
           {this.selectContent()}
         </Content>
       </div>
