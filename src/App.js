@@ -11,7 +11,6 @@ import Contact from './Components/Pages/Contact/Contact';
 import Content from './Components/Content/Content';
 
 import Particles from 'react-particles-js';
-import LangSelect from './i18n/LangSelect';
 let json = require('./main-particles.json');
 
 export default class App extends React.Component {
@@ -47,14 +46,18 @@ export default class App extends React.Component {
     this.setState({ currentContent: newContent });
   }
 
+  onLanguageChange = () => {
+    // Update content without reloading the whole App
+    this.forceUpdate();
+  }
+
   render() {
     return (
       <div className="App" >
         <WelcomeScreen />
         <Particles className="main-particles" params={json} />
-        <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} />
-        <Content>
-          <LangSelect action={() => this.forceUpdate()}/>
+        <Navbar currentContent={this.state.currentContent} changeContent={this.changeContent} onLanguageChange={this.onLanguageChange}/>
+        <Content ref={this.contentRef}>
           {this.selectContent()}
         </Content>
       </div>

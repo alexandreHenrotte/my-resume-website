@@ -1,0 +1,11 @@
+
+.flag-container {
+    height: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.flag-container img {
+    height: auto;
+    width: 35px;
+}
