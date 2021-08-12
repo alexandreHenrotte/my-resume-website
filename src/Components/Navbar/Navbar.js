@@ -68,6 +68,13 @@ export default class Navbar extends React.Component {
                             <span>Contact</span>
                         </li>
                     </ul>
+                    <div id="download-pdf-container">
+                        <a href={process.env.PUBLIC_URL + "/files/CV-Alexandre_HENROTTE.pdf"} download="">
+                            <img className="download-pdf-image"
+                                        src={process.env.PUBLIC_URL + "/icons/navbar/pdf.png"}
+                                        alt="Download PDF icon"/>
+                        </a>
+                    </div>
                 </nav>
                 <img id="toggle-navbar-icon"
                     src={process.env.PUBLIC_URL + "/icons/navbar/toggle-navbar.svg"}
