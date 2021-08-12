@@ -87,6 +87,15 @@ nav ul {
   visibility: visible;
 }
 
+#download-pdf-container {
+  position: absolute;
+  bottom: 20px;
+}
+.download-pdf-image {
+  height: auto;
+  width: 70px;
+}
+
 #toggle-navbar-icon {
   position: relative;
   height: 76px;
@@ -143,6 +152,10 @@ nav ul {
   }
 
   .nav-icon span {
+    display: none;
+  }
+
+  #download-pdf-container {
     display: none;
   }
 }
