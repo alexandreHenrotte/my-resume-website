@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import SkillBox from './SkillBox';
 import './Skills.css'
 
@@ -8,7 +9,7 @@ export default class Skills extends React.Component {
             <section className="skills-container">
                 <div className="row">
                     <div className="column">
-                        <h3>Programmation</h3>
+                        <h3><Trans>skills.programming</Trans></h3>
                         <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/c-sharp.png",
@@ -82,7 +83,7 @@ export default class Skills extends React.Component {
                 </div>
                 <div className="row">
                     <div className="column">
-                        <h3>Base de données</h3>
+                        <h3><Trans>skills.database</Trans></h3>
                         <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/mssql.png",
@@ -92,7 +93,7 @@ export default class Skills extends React.Component {
                         />
                     </div>
                     <div className="column">
-                        <h3>Gestion de versions</h3>
+                        <h3><Trans>skills.version-control</Trans></h3>
                         <SkillBox
                             img={{
                                 src: process.env.PUBLIC_URL + "/images/skills/git.png",

@@ -20,7 +20,14 @@ nav {
   background: white;
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+#langselect-container {
+  position: absolute;
+  top: 10px;
 }
 
 nav ul {
@@ -80,6 +87,15 @@ nav ul {
   visibility: visible;
 }
 
+#download-pdf-container {
+  position: absolute;
+  bottom: 20px;
+}
+.download-pdf-image {
+  height: auto;
+  width: 70px;
+}
+
 #toggle-navbar-icon {
   position: relative;
   height: 76px;
@@ -119,6 +135,10 @@ nav ul {
     width: 100vw;
   }
 
+  #langselect-container {
+    display: none;
+  }
+
   nav ul {
     flex-direction: row;
   }
@@ -132,6 +152,10 @@ nav ul {
   }
 
   .nav-icon span {
+    display: none;
+  }
+
+  #download-pdf-container {
     display: none;
   }
 }

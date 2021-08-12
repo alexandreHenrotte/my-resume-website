@@ -1,4 +1,6 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
+import { renderToString } from 'react-dom/server';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from 'emailjs-com'
@@ -13,7 +15,6 @@ export default class Contact extends React.Component {
     constructor() {
         super();
 
-        
         this.state = {
             name: "",
             mail: "",
@@ -80,7 +81,7 @@ export default class Contact extends React.Component {
     }
 
     successMessage() {
-        toast.info("🎉 Message envoyé 🎉", {
+        toast.info(renderToString(<Trans>contact.pop-up.success</Trans>) + " 🎉", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -92,7 +93,7 @@ export default class Contact extends React.Component {
     }
 
     errorMessage() {
-        toast.error("Le message n'a pas pu être envoyé 😓", {
+        toast.error(renderToString(<Trans>contact.pop-up.global-error</Trans>) + " 😓", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -104,7 +105,7 @@ export default class Contact extends React.Component {
     }
 
     missingCaptchaError() {
-        toast.error("Veuillez compléter le captcha", {
+        toast.error(renderToString(<Trans>contact.pop-up.captcha-error</Trans>), {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -116,7 +117,7 @@ export default class Contact extends React.Component {
     }
 
     formNotValidError() {
-        toast.error("Le formulaire de contact est incomplet 😕", {
+        toast.error(renderToString(<Trans>contact.pop-up.incomplete-form</Trans>) +" 😕", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -141,9 +142,9 @@ export default class Contact extends React.Component {
             <section className='contact-container'>
                 <ToastContainer />
                 <div id="contact-form">
-                    <h3>Contactez-moi</h3>
+                    <h3><Trans>contact.contact-me</Trans></h3>
                     <form>
-                        <input type="text" placeholder="Nom" name="name" value={this.state.name} onChange={this.handleChange} autocomplete="new-password"/>
+                        <input type="text" placeholder={renderToString(<Trans>contact.name</Trans>)} name="name" value={this.state.name} onChange={this.handleChange} autocomplete="new-password"/>
                         <input type="email" placeholder="Mail" name="mail" value={this.state.mail} onChange={this.handleChange} autocomplete="new-password"/>
                         <textarea placeholder="Message" name="message" value={this.state.message} onChange={this.handleChange} autocomplete="new-password"/>
                         <div id="recaptcha-container">
@@ -153,7 +154,7 @@ export default class Contact extends React.Component {
                                 onChange={this.captchaCompleted}
                             />
                         </div>
-                        <button onClick={(this.handleForm)}>Envoyer</button>
+                        <button onClick={(this.handleForm)}>{<Trans>contact.send</Trans>}</button>
                     </form>
                 </div>
             </section>
