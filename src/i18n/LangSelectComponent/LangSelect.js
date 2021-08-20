@@ -17,7 +17,6 @@ export default class LangSelect extends React.Component {
     }
 
     changeLanguage = (language) => {
-        console.log(Date.now())
         switch (language) {
             case Language.FR:
                 i18n.changeLanguage(Language.FR);
