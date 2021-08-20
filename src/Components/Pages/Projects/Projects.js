@@ -9,26 +9,35 @@ export default class Projects extends React.Component {
             <section className='projects-container'>
                 <div className='projects-list'>
                     <ProjectContainer
-                        title="Belgium Covid Tracker"
+                        title={<Trans>projects.1.name</Trans>}
                         githubProjectName="alexandreHenrotte/belgium-covid-tracker"
-                        img= {{
+                        img={{
                             src: process.env.PUBLIC_URL + "/images/projects/belgium-covid-tracker.jpg",
                             alt: "Belgium Covid Tracker Project"
                         }}
                         text={<Trans>projects.1.details</Trans>}
                     />
                     <ProjectContainer
-                        title="SleepWell"
+                        title={<Trans>projects.2.name</Trans>}
                         githubProjectName="alexandreHenrotte/SleepWell"
-                        img= {{
+                        img={{
                             src: process.env.PUBLIC_URL + "/images/projects/sleepwell.jpg",
                             alt: "SleepWell Project"
                         }}
                         text={<Trans>projects.2.details</Trans>}
                     />
                     <ProjectContainer
-                        title="PriceTracker (en cours)"
-                        img= {{
+                        title={<Trans>projects.3.name</Trans>}
+                        githubProjectName="alexandreHenrotte/3x3-Rubiks-Cube-3D"
+                        img={{
+                            src: process.env.PUBLIC_URL + "/images/projects/3x3-rubiks-cube-3d.jpg",
+                            alt: "3x3-Rubiks-Cube-3D"
+                        }}
+                        text={<Trans>projects.3.details</Trans>}
+                    />
+                    <ProjectContainer
+                        title={<Trans>projects.4.name</Trans>}
+                        img={{
                             src: process.env.PUBLIC_URL + "/images/projects/pricetracker.png",
                             alt: "PriceTracker"
                         }}
@@ -37,7 +46,7 @@ export default class Projects extends React.Component {
                     {/* <ProjectContainer
                         title="Stock Manager (en cours)"
                         githubProjectName="alexandreHenrotte/stock-manager"
-                        img= {{
+                        img={{
                             src: process.env.PUBLIC_URL + "/images/projects/stock-manager.jpg",
                             alt: "Stock Manager Project"
                         }}

@@ -72,12 +72,19 @@
         "see-on-github": "Voir sur Github",
         "in-progress": "En préparation",
         "1": {
+            "name": "Belgium Covid Tracker",
             "details": "Bot Twitter postant journalièrement des statistiques sur l'état du Covid-19 en Belgique."
         },
         "2": {
+            "name": "SleepWell",
             "details": "Site web indiquant les meilleures heures pour aller dormir en se basant sur les cycles du sommeil."
         },
         "3": {
+            "name": "3x3 Rubiks-Cube 3D",
+            "details": "Un rubik's cube 3x3 directement jouable depuis un navigateur web."
+        },
+        "4": {
+            "name": "PriceTracker (en cours)",
             "details": "Site web permettant à l'utilisateur de suivre des produits présents sur plusieurs sites web et de recevoir une alerte lorsque le prix descend."
         },
         "see-more-button": "Voir tous mes projets open-source (petits et grands)"
