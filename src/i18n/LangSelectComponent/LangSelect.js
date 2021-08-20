@@ -1,8 +1,9 @@
 import React from 'react';
+import Cookies from 'universal-cookie';
 import i18n from "i18next";
 import { Language } from '../Language';
 import './LangSelect.css';
-
+const cookies = new Cookies();
 
 export default class LangSelect extends React.Component {
 
@@ -16,12 +17,15 @@ export default class LangSelect extends React.Component {
     }
 
     changeLanguage = (language) => {
+        console.log(Date.now())
         switch (language) {
-            case Language.EN:
-                i18n.changeLanguage(Language.EN);
-                break;
             case Language.FR:
                 i18n.changeLanguage(Language.FR);
+                cookies.set('lang', Language.FR, { path: '/', expires: new Date(Date.now()+259200)});
+                break;
+            case Language.EN:
+                i18n.changeLanguage(Language.EN);
+                cookies.set('lang', Language.EN, { path: '/', expires: new Date(Date.now()+259200)});
                 break;
             default:
                 break;
