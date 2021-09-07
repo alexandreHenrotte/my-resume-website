@@ -41,7 +41,7 @@ export default class Projects extends React.Component {
                             src: process.env.PUBLIC_URL + "/images/projects/pricetracker.png",
                             alt: "PriceTracker"
                         }}
-                        text={<Trans>projects.3.details</Trans>}
+                        text={<Trans>projects.4.details</Trans>}
                     />
                     {/* <ProjectContainer
                         title="Stock Manager (en cours)"
